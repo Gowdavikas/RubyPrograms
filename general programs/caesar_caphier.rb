@@ -12,7 +12,7 @@ def caesar_cipher(text, shift)
     end
   
     encrypted_text
-  end
+end
   
   puts "Enter the alphabets in lowercase: "
   text = gets.chomp
