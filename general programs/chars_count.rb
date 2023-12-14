@@ -1,5 +1,5 @@
 
-puts "Enter the sentence to count : "
+puts "Enter the sentence to count :- "
 string = gets.chomp
 
 string_res = string.chars.tally

@@ -1,4 +1,5 @@
 class Node
+  
     attr_accessor :value, :left, :right
   
     def initialize(value, left = nil, right = nil)

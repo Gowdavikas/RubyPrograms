@@ -8,5 +8,5 @@ def tower_of_hanoi(n, source, target, auxiliary)
     end
 end
 
-  tower_of_hanoi(3, 'A', 'C', 'B')
+tower_of_hanoi(3, 'A', 'C', 'B')
   

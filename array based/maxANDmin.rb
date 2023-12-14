@@ -1,4 +1,5 @@
 def find_max_min(array)
+
     if array.empty?
       puts "The array is empty."
       return
@@ -14,9 +15,9 @@ def find_max_min(array)
   
     puts "Maximum Value: #{max_value}"
     puts "Minimum Value: #{min_value}"
-  end
+end
   
-  puts "Enter the numbers :"
-  given_array = gets.chomp.split(",")
-  find_max_min(given_array)
+puts "Enter the numbers :"
+given_array = gets.chomp.split(",")
+find_max_min(given_array)
   

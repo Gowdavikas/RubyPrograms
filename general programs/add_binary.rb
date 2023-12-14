@@ -5,5 +5,4 @@ b = gets.chomp.to_i
 
 sum = a + b
 binary = sum.to_s(2)
-
 puts "Binary value is #{binary}"
