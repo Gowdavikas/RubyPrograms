@@ -9,7 +9,6 @@ b = [2, 4, 3]
 result = [a - b]
 puts result
 
-
 # or
 
 def array_diff(a, b)

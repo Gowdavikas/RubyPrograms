@@ -1,4 +1,5 @@
 def fizzbuzz
+  
     (1..100).each do |num|
       if (num % 3).zero? && (num % 5).zero?
         puts 'FizzBuzz'
