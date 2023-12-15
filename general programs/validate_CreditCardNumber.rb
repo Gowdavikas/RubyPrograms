@@ -17,7 +17,6 @@ def validate_credit_card(card_number)
     (sum % 10).zero?
   end
   
-  
   puts "Enter the credit card number: "
   user_input = gets.chomp
   puts validate_credit_card(user_input)

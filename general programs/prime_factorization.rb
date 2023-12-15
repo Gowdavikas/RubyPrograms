@@ -9,7 +9,6 @@ def prime_factors(n)
     end
     divisor += 1
   end
-
   factors
 end
 

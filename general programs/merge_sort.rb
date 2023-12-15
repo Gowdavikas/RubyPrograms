@@ -15,8 +15,10 @@ def merge(left, right)
 end
 
 puts "Enter the numbers to sort (comma-separated):  "
+
 unsorted_array = gets.chomp.split(",").map(&:to_i)
 sorted_array = merge_sort(unsorted_array)
+
 puts "Unsorted Array: #{unsorted_array}"
 puts "Sorted Array: #{sorted_array}"
   

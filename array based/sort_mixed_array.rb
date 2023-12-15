@@ -6,9 +6,8 @@ def sort_mixed_array(input_array)
     return sorted_integers, sorted_non_integers
 end
   
-mixed_array = [5, "apple", 3.14, "banana", 42, "orange", 7]
+mixed_array = [5, "apple", 3.14, "banana", 4, 2, "orange", 7]
 result = sort_mixed_array(mixed_array)
 
 puts "Sorted Integers: #{result[0]}"
 puts "Sorted Non-Integers: #{result[1]}"
-  
