@@ -1,41 +1,41 @@
 class Node
   
-    attr_accessor :value, :left, :right
-  
-    def initialize(value, left = nil, right = nil)
-      @value = value
-      @left = left
-      @right = right
-    end
-  
-    def insert(new_value)
-      if new_value < @value
-        @left.nil? ? @left = Node.new(new_value) : @left.insert(new_value)
-      elsif new_value > @value
-        @right.nil? ? @right = Node.new(new_value) : @right.insert(new_value)
-      end
-    end
-  
-    def search(target_value)
-      return self if @value == target_value
-  
-      if target_value < @value && @left
-        @left.search(target_value)
-      elsif target_value > @value && @right
-        @right.search(target_value)
-      else
-        nil
-      end
-    end
-  
-    def inorder
-      result = []
-      result += @left.inorder if @left
-      result << @value
-      result += @right.inorder if @right
-      result
+  attr_accessor :value, :left, :right
+
+  def initialize(value, left = nil, right = nil)
+    @value = value
+    @left = left
+    @right = right
+  end
+
+  def insert(new_value)
+    if new_value < @value
+      @left.nil? ? @left = Node.new(new_value) : @left.insert(new_value)
+    elsif new_value > @value
+      @right.nil? ? @right = Node.new(new_value) : @right.insert(new_value)
     end
   end
+
+  def search(target_value)
+    return self if @value == target_value
+
+    if target_value < @value && @left
+      @left.search(target_value)
+    elsif target_value > @value && @right
+      @right.search(target_value)
+    else
+      nil
+    end
+  end
+
+  def inorder
+    result = []
+    result += @left.inorder if @left
+    result << @value
+    result += @right.inorder if @right
+    result
+  end
+end
 
 root = Node.new(5)
 root.insert(3)

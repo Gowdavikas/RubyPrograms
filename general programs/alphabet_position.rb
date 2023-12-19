@@ -1,4 +1,3 @@
-
 puts "Enter the letter for its numeric position: "
 input_text = gets.chomp.to_s
 

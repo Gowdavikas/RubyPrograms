@@ -10,7 +10,7 @@ def print_calendar(year, month)
   puts "Sun Mon Tue Wed Thu Fri Sat"
 
   print "    " * day_of_week
-
+  
   (first_day..first_day.next_month.prev_day).each do |day|
     print "#{day.strftime('%3d')} "
     puts if day.wday == 6
