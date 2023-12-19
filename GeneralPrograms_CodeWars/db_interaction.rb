@@ -8,5 +8,5 @@ ActiveRecord::Base.establish_connection(
 class User < ActiveRecord::Base
 end
 
-user = User.create(name: 'John Doe', age: 30)
+user = User.create(name: 'John Bush', age: 30)
 puts "User Created: #{user.name}"
