@@ -21,10 +21,8 @@ def guess_the_number
   
       attempts += 1
     end
-    
   
     puts "Sorry, you've run out of attempts. The correct number was #{secret_number}. Better luck next time!"
 end
-  
 guess_the_number
   
